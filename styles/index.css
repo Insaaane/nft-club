@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'Mont';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Mont'), 
+    url('../fonts/Mont-Light.woff') format('woff'),
+    url('../fonts/Mont-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'FoglihtenNo06';
+	font-style: normal;
+	font-weight: 500;
+	src: local('FoglihtenNo06'), 
+    url('../fonts/GrtskExa-Regular.woff') format('woff'),
+    url('../fonts/GrtskExa-Regular.woff2') format('woff2');
+}
+
+body {
+	font-family: 'Mont';
+	font-style: normal;
+	font-size: 30px;
+	font-weight: 300;
+	color: #14191A;
+	line-height: normal;
+  color: #FFF;
+  background-color: #0B0B0B;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
+.active {
+  background: linear-gradient(90deg, rgba(174, 134, 37, 0.40) 0%, rgba(247, 239, 138, 0.40) 36.03%, rgba(210, 172, 71, 0.40) 74.34%, rgba(237, 201, 103, 0.40) 100%);
+}
+
+/* Header - start */
+
+.header {
+  position: relative;
+  height: 87px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgb(174,134,37);
+  background: linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 36%, rgba(210,172,71,1) 74%, rgba(237,201,103,1) 100%);
+}
+
+.header__logo-link {
+  border: 1px solid #AE8625;
+  border-radius: 20px;
+  padding: 8px 22px 6px 22px;
+  margin: 9px 0 12px 0;
+
+  margin-right: 30px;
+  min-width: 190px;
+
+  box-shadow: 4px 4px 5px 0px #000;
+  backdrop-filter: blur(5px);
+}
+
+.header__nav {
+  display: flex;
+  gap: 30px;
+
+  margin-top: 31px;
+}
+
+.header__nav-link-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+
+  height: 44px;
+  width: 44px;
+  border: 1px solid #AE8625;
+  border-radius: 50%;
+
+  box-shadow: 4px 4px 5px 0px #000;
+  backdrop-filter: blur(5px);
+}
+
+.header__nav-link {
+  font-size: 25px;
+  line-height: 32px;
+  border: 1px solid #AE8625;
+  border-radius: 20px;
+  width: 190px;
+  height: 44px;
+  padding: 6px 0;
+  text-align: center;
+
+  box-shadow: 4px 4px 5px 0px #000;
+  backdrop-filter: blur(5px);
+}
+
+/* Header - end */
