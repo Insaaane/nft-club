@@ -52,7 +52,7 @@
             Ежедневно с 18:00 до 5:00
           </p>
 
-          <button class="hero__btn nav-link">
+          <button class="hero__btn nav-link residency-btn">
             <p class="btn-text gold-title">СТАТЬ РЕЗИДЕНТОМ</p>
           </button>
         </div>
@@ -95,7 +95,7 @@
             прохождения мини-собеседования после подачи заявки на членство.
           </p>
 
-          <button class="format__btn nav-link">
+          <button class="format__btn nav-link residency-btn">
             <p class="btn-text gold-title">СТАТЬ РЕЗИДЕНТОМ</p>
           </button>
         </div>
@@ -151,7 +151,66 @@
         <p class="footer__info-item ">Санкт-Петербург, Ломоносова 22а</p>
       </div>
       
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfa30f36a62ef167a3f93f94d3fa20a57983a8222d7900f96e1d07db88317144&amp;width=100%25&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>  </footer>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfa30f36a62ef167a3f93f94d3fa20a57983a8222d7900f96e1d07db88317144&amp;width=100%25&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>  
+  </footer>
+  
+  <div class="residency__popup popup" hidden>
+    <div class="residency__content">
+      <h4 class="residency__title gold-title">ЗАЯВКА НА РЕЗИДЕНСТВО В SECRET COD</h4>
+
+      <form action="" class="residency__form">
+        <label for="fio" class="residency__label">ФИО</label><br/>
+        <input id="fio" name="fio" type="text" class="residency__input">
+
+        <label for="birthday" class="residency__label">Дата рождения</label><br/>
+        <input id="birthday" name="birthday" type="date" class="residency__input">
+
+        <label for="phone" class="residency__label">Номер телефона</label><br/>
+        <input id="phone" name="phone" type="tel" class="residency__input">
+
+        <label for="email" class="residency__label">Почта</label><br/>
+        <input id="email" name="email" type="email" class="residency__input">
+
+        <label for="work" class="residency__label">Место работы</label><br/>
+        <input id="work" name="work" type="text" class="residency__input">
+
+        <label for="position" class="residency__label">Должность</label><br/>
+        <input id="position" name="position" type="text" class="residency__input">
+
+        <label for="salary" class="residency__label">Заработная плата</label><br/>
+        <input id="salary" name="salary" type="text" class="residency__input">
+        
+        <label for="salary" class="residency__label">
+          Что вы знаете о Метовселенной и имели ли дело с ней?
+        </label><br/>
+        <textarea id="salary" name="salary" type="text" class="residency__input"></textarea>
+
+        <div class="residency__submit_btn-wrap">
+          <button type="submit" class="residency__submit_btn nav-link">
+            <p class="btn-text gold-title">ПОДАТЬ ЗАЯВКУ</p>
+          </button>
+        </div>
+        
+      </form>
+      
+      
+    </div>
+  </div>
+
+  <div class="success-residency__popup popup" hidden>
+    <div class="success-residency__content">
+      <img src="./imgs/giraffe-2.png" alt="Изображение жирафа" class="success-residency__img">
+
+      <div class="success-residency__text-wrap">
+        <h4 class="success-residency__title gold-title">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</h4>
+        <p class="success-residency__text">
+          Ожидайте звонок и приглашение на собесдедование на почту в течении двух дней
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
 </body>
 
 </html>
