@@ -16,6 +16,11 @@
     url('../fonts/GrtskExa-Regular.woff2') format('woff2');
 }
 
+:root {
+  --gold-gradient: linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 36%, rgba(210,172,71,1) 74%, rgba(237,201,103,1) 100%);
+  --transparent-gold-gradient: linear-gradient(90deg, rgba(174, 134, 37, 0.40) 0%, rgba(247, 239, 138, 0.40) 36.03%, rgba(210, 172, 71, 0.40) 74.34%, rgba(237, 201, 103, 0.40) 100%);
+}
+
 body {
 	font-family: 'Mont';
 	font-style: normal;
@@ -33,8 +38,27 @@ body {
   padding: 0 140px;
 }
 
+.nav-link {
+  border: 1px solid #D2AC47;
+  
+  box-shadow: 4px 4px 5px 0px #000;
+  backdrop-filter: blur(5px); 
+}
+
+.nav-link:hover {
+  background-image: var(--transparent-gold-gradient);
+}
+
 .active {
-  background: linear-gradient(90deg, rgba(174, 134, 37, 0.40) 0%, rgba(247, 239, 138, 0.40) 36.03%, rgba(210, 172, 71, 0.40) 74.34%, rgba(237, 201, 103, 0.40) 100%);
+  background-image: var(--transparent-gold-gradient);
+}
+
+.gold {
+  font-family: 'FoglihtenNo06';
+
+  background-image: var(--gold-gradient);
+  color: transparent;
+  background-clip: text;
 }
 
 /* Header - start */
@@ -55,21 +79,16 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: rgb(174,134,37);
-  background: linear-gradient(90deg, rgba(174,134,37,1) 0%, rgba(247,239,138,1) 36%, rgba(210,172,71,1) 74%, rgba(237,201,103,1) 100%);
+  background: var(--gold-gradient);
 }
 
 .header__logo-link {
-  border: 1px solid #AE8625;
   border-radius: 20px;
   padding: 8px 22px 6px 22px;
   margin: 9px 0 12px 0;
 
   margin-right: 30px;
   min-width: 190px;
-
-  box-shadow: 4px 4px 5px 0px #000;
-  backdrop-filter: blur(5px);
 }
 
 .header__nav {
@@ -87,25 +106,80 @@ body {
 
   height: 44px;
   width: 44px;
-  border: 1px solid #AE8625;
   border-radius: 50%;
-
-  box-shadow: 4px 4px 5px 0px #000;
-  backdrop-filter: blur(5px);
 }
 
 .header__nav-link {
   font-size: 25px;
   line-height: 32px;
-  border: 1px solid #AE8625;
   border-radius: 20px;
   width: 190px;
   height: 44px;
   padding: 6px 0;
   text-align: center;
-
-  box-shadow: 4px 4px 5px 0px #000;
-  backdrop-filter: blur(5px);
 }
 
 /* Header - end */
+
+
+/* Hero-block - start */
+
+.hero__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 75px 140px 0 80px;
+
+  position: relative;
+}
+
+.hero__title {
+  font-size: 200px;
+  line-height: 204px;
+  text-align: end;
+}
+
+.hero__img {
+  position: absolute;
+  top: 107px;
+}
+
+.hero__info {
+  max-width: 505px;
+  margin-left: auto;
+}
+
+.hero__info_label {
+  margin-bottom: 170px;
+  font-size: 50px;
+}
+
+.hero__info_label-gold {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+.hero__info_label-white {
+  font-family: 'FoglihtenNo06';
+  font-size: 60px;
+}
+
+.hero__info_desc {
+  margin-bottom: 10px;
+  line-height: 35px;
+}
+
+.hero__btn {
+  border-radius: 40px;
+  padding: 19px 26px 16px 26px;
+
+  margin-top: 20px;
+}
+
+.btn-text {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* Hero-block - end */
