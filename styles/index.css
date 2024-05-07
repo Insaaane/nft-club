@@ -38,11 +38,27 @@ body {
   padding: 0 140px;
 }
 
+.gold-title {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: 'FoglihtenNo06';
+
+  background-image: var(--gold-gradient);
+  color: transparent;
+  background-clip: text;
+}
+
 .nav-link {
   border: 1px solid #D2AC47;
   
   box-shadow: 4px 4px 5px 0px #000;
   backdrop-filter: blur(5px); 
+}
+
+.btn-text {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 
 .nav-link:hover {
@@ -53,12 +69,9 @@ body {
   background-image: var(--transparent-gold-gradient);
 }
 
-.gold {
-  font-family: 'FoglihtenNo06';
-
-  background-image: var(--gold-gradient);
-  color: transparent;
-  background-clip: text;
+.text {
+  text-align: justify;
+  line-height: 38px;
 }
 
 /* Header - start */
@@ -68,11 +81,6 @@ body {
   height: 87px;
 }
 
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header::after {
   content: '';
   height: 1px;
@@ -80,6 +88,11 @@ body {
   position: absolute;
   bottom: 0;
   background: var(--gold-gradient);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__logo-link {
@@ -128,7 +141,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 
-  padding: 75px 140px 0 80px;
+  padding: 75px 140px 139px 80px;
 
   position: relative;
 }
@@ -177,9 +190,124 @@ body {
   margin-top: 20px;
 }
 
-.btn-text {
-  font-size: 40px;
-  line-height: 50px;
+/* Hero-block - end */
+
+
+/* History - start */
+
+.history {
+  margin-bottom: 40px;
 }
 
-/* Hero-block - end */
+.history__title {
+  margin-bottom: 20px;
+}
+
+.history__content {
+  display: flex;
+  gap: 39px;
+  align-items: center ;
+}
+
+.history__img {
+  width: 261px;
+  height: 326px;
+}
+
+/* History - end */
+
+
+/* Format - start */
+
+.format__text {
+  margin-bottom: 20px;
+}
+
+.format__text-wrap {
+  display: flex;
+  gap: 41px;
+}
+
+.format__btn {
+  border-radius: 40px;
+  padding: 19px 16px 17px 16px;
+  max-height: 87px;
+  white-space: nowrap;
+}
+
+/* Fromat - end */
+
+
+/* Footer - start */
+
+.footer {
+  margin-top: 80px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: var(--gold-gradient);
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+}
+
+/* Team - start */
+
+.footer__team {
+  margin-bottom: 60px;
+}
+
+.footer__team_title {
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer__team-members_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__team-member {
+  text-align: center;
+}
+
+.footer__team-member_avatar {
+  width: 154px;
+  height: 154px;
+  margin-bottom: 26px;
+}
+
+.footer__team-member_name {
+  font-size: 25px;
+}
+
+.footer__team-member_role {
+  font-size: 15px;
+}
+
+/* Team - end */
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+  margin-bottom: 60px;
+}
+
+.footer__info-item {
+  font-size: 25px;
+  line-height: 32px;
+}
+
+/* Footer - end */
