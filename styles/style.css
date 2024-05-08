@@ -9,11 +9,15 @@
 
 @font-face {
 	font-family: 'FoglihtenNo06';
-	font-style: normal;
+  font-style: normal;
 	font-weight: 500;
+	src: url('../fonts/foglihtenno06.eot'); 
 	src: local('FoglihtenNo06'), 
-    url('../fonts/GrtskExa-Regular.woff') format('woff'),
-    url('../fonts/GrtskExa-Regular.woff2') format('woff2');
+    url('../fonts/foglihtenno06.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/foglihtenno06.woff2') format('woff2'), 
+		url('../fonts/foglihtenno06.woff') format('woff'), 
+		url('../fonts/foglihtenno06.ttf') format('truetype'),
+		url('../fonts/foglihtenno06.svg#foglihtenno06') format('svg');
 }
 
 :root {
