@@ -327,6 +327,10 @@ body {
   line-height: 32px;
 }
 
+.footer-icons {
+  display: none;
+}
+
 /* Footer - end */
 
 
@@ -1074,6 +1078,9 @@ textarea.residency__input {
     overflow: hidden;
     display: flex;
     align-items: center;
+  }
+  .footer-icons {
+    display: flex;
   }
 }
 
