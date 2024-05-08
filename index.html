@@ -14,18 +14,24 @@
   <header class="header">
     <div class="header__wrapper wrapper">
       <a href="index.html" class="header__logo-link nav-link active">
-        <img src="./imgs/logo-icon.svg" alt="Логотип" width="145" class="header__logo-img">
+        <img src="./imgs/logo-icon.svg" alt="Логотип" class="header__logo-img">
       </a>
 
       <nav class="header__nav">
-        <a href="https://vk.com/i_sane" class="header__nav-link-icon nav-link">
-          <img src="./imgs/vk-icon.svg" alt="ВКонтакте" width="18" class="header__nav-img">
-        </a>
-        <a href="tel:+7951234567" class="header__nav-link-icon nav-link">
-          <img src="./imgs/phone-icon.svg" alt="Телефон" width="24" class="header__nav-img">
-        </a>
-        <a href="" class="header__nav-link nav-link">афиша</a>
-        <a href="" class="header__nav-link nav-link">меню</a>
+        <div class="header__icons-wrap header-icons">
+          <a href="https://vk.com/i_sane" class="header__nav-link-icon nav-link">
+            <img src="./imgs/vk-icon.svg" alt="ВКонтакте" class="header__nav-img-vk">
+          </a>
+          <a href="tel:+7951234567" class="header__nav-link-icon nav-link">
+            <img src="./imgs/phone-icon.svg" alt="Телефон" class="header__nav-img-phone">
+          </a>
+        </div>
+        
+        <div class="header__links-wrap">
+          <a href="" class="header__nav-link nav-link">афиша</a>
+          <a href="" class="header__nav-link nav-link">меню</a>
+        </div>
+        
       </nav>
     </div>
   </header>
@@ -46,10 +52,10 @@
           </p>
 
           <p class="hero__info_desc">
-            Ночной клуб по адресу Ломоносова 22а
+            Ночной клуб по адресу Ломоносова 22а
           </p>
           <p class="hero__info_desc">
-            Ежедневно с 18:00 до 5:00
+            Ежедневно с 18:00 до 5:00
           </p>
 
           <button class="hero__btn nav-link residency-btn">
@@ -64,7 +70,7 @@
 
         <h2 class="history__title gold-title">история создания</h2>
 
-        <div class="history__content">
+        <div class="history__content image-rotate">
           <p class="history__text text">
             В 2023 году у большинства людей на слуху были такие слова: Метавселенная, дополненная реальность,
             криптовалюта, NFT, Web 3.0. Люди либо разбирались в этом, либо хоть один раз слышали. Поэтому появилась идея
@@ -145,13 +151,24 @@
         </div>
       </div>
       
+      <div class="header__icons-wrap footer-icons">
+        <a href="https://vk.com/i_sane" class="header__nav-link-icon nav-link">
+          <img src="./imgs/vk-icon.svg" alt="ВКонтакте" class="header__nav-img-vk">
+        </a>
+        <a href="tel:+7951234567" class="header__nav-link-icon nav-link">
+          <img src="./imgs/phone-icon.svg" alt="Телефон" class="header__nav-img-phone">
+        </a>
+      </div>
+
       <div class="footer__info">
         <a href="tel:+79873337393" class="footer__info-item ">+7 (987) 333-73-93</a>
         <a href="mailto:corp.secretcod@mail.ru" class="footer__info-item ">corp.secretcod@mail.ru</a>
         <p class="footer__info-item ">Санкт-Петербург, Ломоносова 22а</p>
       </div>
       
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfa30f36a62ef167a3f93f94d3fa20a57983a8222d7900f96e1d07db88317144&amp;width=100%25&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>  
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adfa30f36a62ef167a3f93f94d3fa20a57983a8222d7900f96e1d07db88317144&amp;width=100%25&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>      
+      </div>
   </footer>
   
   <div class="residency__popup popup" hidden>
