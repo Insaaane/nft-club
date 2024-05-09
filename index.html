@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__wrapper wrapper">
       <a href="index.html" class="header__logo-link nav-link active">
-        <img src="./imgs/logo-icon.svg" alt="Логотип" class="header__logo-img">
+        <img src="../imgs/logo-icon.svg" alt="Логотип" class="header__logo-img">
       </a>
 
       <nav class="header__nav">
@@ -28,7 +28,7 @@
         </div>
         
         <div class="header__links-wrap">
-          <a href="" class="header__nav-link nav-link">афиша</a>
+          <a href="/events.html" class="header__nav-link nav-link">афиша</a>
           <a href="" class="header__nav-link nav-link">меню</a>
         </div>
         
@@ -173,34 +173,50 @@
   
   <div class="residency__popup popup" hidden>
     <div class="residency__content">
-      <h4 class="residency__title gold-title">ЗАЯВКА НА РЕЗИДЕНСТВО В SECRET COD</h4>
+      <h4 class="residency__title gold-title">ЗАЯВКА НА РЕЗИДЕНСТВО В SECRET COD</h4>
 
       <form action="" class="residency__form">
-        <label for="fio" class="residency__label">ФИО</label><br/>
-        <input id="fio" name="fio" type="text" class="residency__input">
-
-        <label for="birthday" class="residency__label">Дата рождения</label><br/>
-        <input id="birthday" name="birthday" type="date" class="residency__input">
-
-        <label for="phone" class="residency__label">Номер телефона</label><br/>
-        <input id="phone" name="phone" type="tel" class="residency__input">
-
-        <label for="email" class="residency__label">Почта</label><br/>
-        <input id="email" name="email" type="email" class="residency__input">
-
-        <label for="work" class="residency__label">Место работы</label><br/>
-        <input id="work" name="work" type="text" class="residency__input">
-
-        <label for="position" class="residency__label">Должность</label><br/>
-        <input id="position" name="position" type="text" class="residency__input">
-
-        <label for="salary" class="residency__label">Заработная плата</label><br/>
-        <input id="salary" name="salary" type="text" class="residency__input">
+        <div class="residency__input-wrap">
+          <label for="fio" class="residency__label">ФИО</label>
+          <input id="fio" name="fio" type="text" class="residency__input nav-link">
+        </div>
         
-        <label for="salary" class="residency__label">
-          Что вы знаете о Метовселенной и имели ли дело с ней?
-        </label><br/>
-        <textarea id="salary" name="salary" type="text" class="residency__input"></textarea>
+        <div class="residency__input-wrap">
+          <label for="birthday" class="residency__label">Дата рождения</label>
+          <input id="birthday" name="birthday" type="date" class="residency__input nav-link">
+        </div>
+
+        <div class="residency__input-wrap">
+          <label for="phone" class="residency__label">Номер телефона</label>
+          <input id="phone" name="phone" type="tel" class="residency__input nav-link">
+        </div>
+
+        <div class="residency__input-wrap">
+          <label for="email" class="residency__label">Почта</label>
+          <input id="email" name="email" type="email" class="residency__input nav-link">
+        </div>
+
+        <div class="residency__input-wrap">
+          <label for="work" class="residency__label">Место работы</label>
+          <input id="work" name="work" type="text" class="residency__input nav-link">
+        </div>
+
+        <div class="residency__input-wrap">
+          <label for="position" class="residency__label">Должность</label>
+          <input id="position" name="position" type="text" class="residency__input nav-link">
+        </div>
+
+        <div class="residency__input-wrap">
+          <label for="salary" class="residency__label">Заработная плата</label>
+          <input id="salary" name="salary" type="text" class="residency__input nav-link">
+        </div>
+
+        <div class="residency__input-wrap">
+          <label for="salary" class="residency__label">
+            Что вы знаете о Метовселенной и имели ли дело с ней?
+          </label>
+          <textarea id="salary" name="salary" type="text" class="residency__input nav-link"></textarea>
+        </div>
 
         <div class="residency__submit_btn-wrap">
           <button type="submit" class="residency__submit_btn nav-link">
@@ -219,9 +235,9 @@
       <img src="./imgs/giraffe-2.png" alt="Изображение жирафа" class="success-residency__img">
 
       <div class="success-residency__text-wrap">
-        <h4 class="success-residency__title gold-title">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</h4>
+        <h4 class="success-residency__title gold-title">ЗАЯВКА УСПЕШНО ОТПРАВЛЕНА</h4>
         <p class="success-residency__text">
-          Ожидайте звонок и приглашение на собесдедование на почту в течении двух дней
+          Ожидайте звонок и приглашение на собесдедование на почту в течении двух дней
         </p>
       </div>
     </div>
