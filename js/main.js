@@ -5,6 +5,7 @@ const successResidencyPopup = document.querySelector('.success-residency__popup'
 
 const closeBtns = document.querySelectorAll('.close');
 
+
 const escPushHandler = (evt) => {
   if (evt.key === 'Escape') {
     residencyPopup.hidden = true;
@@ -38,3 +39,11 @@ closeBtns.forEach(closeBtn => {
     document.removeEventListener('keydown', escPushHandler);
   })
 })
+
+document.getElementById('phone').addEventListener('input', function(event) {
+  this.value = this.value.replace(/[^0-9+]/g, '');
+});
+
+document.getElementById('email').addEventListener('input', function(event) {
+  this.value = this.value.replace(/[а-яА-Я]/g, '');
+});

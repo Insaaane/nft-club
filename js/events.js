@@ -38,3 +38,11 @@ closeBtns.forEach(closeBtn => {
     document.removeEventListener('keydown', escPushHandler);
   })
 })
+
+document.getElementById('phone').addEventListener('input', function(event) {
+  this.value = this.value.replace(/[^0-9+]/g, '');
+});
+
+document.getElementById('email').addEventListener('input', function(event) {
+  this.value = this.value.replace(/[а-яА-Я]/g, '');
+});
