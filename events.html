@@ -94,17 +94,21 @@
   
   <div class="register__popup popup" hidden>
     <div class="register__content">
+      <img src="./imgs/close.svg" alt="" class="close">
       <h4 class="register__title gold-title">РЕГИСТРАЦИЯ</h4>
 
       <form action="" class="register__form">
-        <div class="register__input-wrap">
-          <label for="work" class="register__label">Выберите мероприятие</label>
-          <select id="work" name="work" class="register__input nav-link select">
-            <option value="" selected disabled></option>
-            <option value="Crypto Future">Crypto Future</option>
-            <option value="Sing song">Sing song</option>
-            <option value="DJ Alexey Union">DJ Alexey Union</option>
-          </select>
+        <label for="work" class="register__label">Выберите мероприятие</label>
+        <div class="custom-select">
+          
+          <div id="work" class="dropdown__button nav-link"></div>
+          <ul class="dropdown-list" hidden>
+            <div class="dropdown-list__container">
+              <li class="dropdown-list-item" data-value="Crypto Future">Crypto Future</li>
+              <li class="dropdown-list-item" data-value="Sing song">Sing song</li>
+              <li class="dropdown-list-item" data-value="DJ Alexey Union">DJ Alexey Union</li>
+            </div>
+          </ul>
         </div>
 
         <div class="register__input-wrap">
@@ -135,6 +139,7 @@
 
   <div class="success-register__popup popup" hidden>
     <div class="success-register__content">
+      <img src="./imgs/close.svg" alt="" class="close">
       <img src="./imgs/giraffe-2.png" alt="Изображение жирафа" class="success-register__img">
 
       <div class="success-register__text-wrap">
@@ -147,6 +152,7 @@
   </div>
 
   <script src="./js/events.js"></script>
+  <script src="./js/custom-select.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,8 @@ const registerPopup = document.querySelector('.register__popup');
 const registerSubmitBtn = document.querySelector('.register__submit_btn')
 const successRegisterPopup = document.querySelector('.success-register__popup')
 
+const closeBtns = document.querySelectorAll('.close');
+
 const escPushHandler = (evt) => {
   if (evt.key === 'Escape') {
     registerPopup.hidden = true;
@@ -27,4 +29,12 @@ registerSubmitBtn.addEventListener('click', (evt) => {
 
   successRegisterPopup.hidden = false;
   registerPopup.hidden = true;
+})
+
+closeBtns.forEach(closeBtn => {
+  closeBtn.addEventListener('click', () => {
+    registerPopup.hidden = true;
+    successRegisterPopup.hidden = true;
+    document.removeEventListener('keydown', escPushHandler);
+  })
 })
